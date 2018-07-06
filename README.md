@@ -1,4 +1,4 @@
-# vue-lupus-paragrpah-pinterest
+# vue-lupus-paragraph-pinterest
 Vue pinterest paragraph component.
 
 

@@ -27,7 +27,6 @@ You can pass the following props:
 ## Example
 ```
 <pg-pinterest
-  type="{{ type }}"
   data-pinterest-url="/pinterest/url"
 >
 ```

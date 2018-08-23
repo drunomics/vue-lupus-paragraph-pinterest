@@ -14,7 +14,7 @@ import it:
 ```
 import { PgPinterest } from 'vue-lupus-paragraph-pinterest';
 
-Vue.component('pg-text', PgPinterest);
+Vue.component('pg-pinterest', PgPinterest);
 ```
 
 

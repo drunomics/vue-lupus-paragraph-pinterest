@@ -1,12 +1,9 @@
 <template>
   <div class="paragraph paragraph--pinterest">
     <div class="paragraph__field-media">
-      <slot name="field_media">
-        <a
-          data-pin-do="embedPin"
-          :href="dataPinterestUrl"></a>
-      </slot>
-      <slot />
+      <a
+        data-pin-do="embedPin"
+        :href="dataPinterestUrl"></a>
     </div>
   </div>
 </template>

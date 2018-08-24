@@ -3,7 +3,7 @@
     <div class="paragraph__field-media">
       <a
         data-pin-do="embedPin"
-        :href="dataPinterestUrl"></a>
+        :href="dataUrl"></a>
     </div>
   </div>
 </template>
@@ -11,7 +11,7 @@
   export default {
     name: 'PgPinterest',
     props: {
-      dataPinterestUrl: { type: String, default: () => '' },
+      dataUrl: { type: String, default: () => '' },
     },
   };
 </script>

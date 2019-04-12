@@ -1,6 +1,6 @@
 <template>
   <div class="paragraph paragraph--pinterest">
-    <slot name="title" />
+    <slot :name="$slots.title ? 'title': 'default'" />
     <div class="pinterest-post">
       <a
         data-pin-do="embedPin"

@@ -1,17 +1,19 @@
 <template>
   <div class="paragraph paragraph--pinterest">
-    <div class="paragraph__field-media">
+    <slot name="title" />
+    <div class="pinterest-post">
       <a
         data-pin-do="embedPin"
-        :href="dataUrl"></a>
+        :href="src"
+      />
     </div>
   </div>
 </template>
 <script>
-  export default {
-    name: 'PgPinterest',
-    props: {
-      dataUrl: { type: String, default: () => '' },
-    },
-  };
+export default {
+  name: 'PgPinterest',
+  props: {
+    src: { type: String, default: () => '' }
+  }
+}
 </script>

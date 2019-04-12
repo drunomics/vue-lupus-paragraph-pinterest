@@ -12,7 +12,7 @@ via npm:
 import it:
 
 ```
-import { PgPinterest } from 'vue-lupus-paragraph-pinterest';
+import PgPinterest from 'vue-lupus-paragraph-pinterest';
 
 Vue.component('pg-pinterest', PgPinterest);
 ```
@@ -21,12 +21,18 @@ Vue.component('pg-pinterest', PgPinterest);
 ## Properties
 You can pass the following props:
 
-- `data-pinterest-url` ( string )
+- `src` ( string )
   The pin's url.
+
+## Slots
+You can use the following slots
+
+- `title` ( default )
+  A title.
 
 ## Example
 ```
-<pg-pinterest
-  data-pinterest-url="/pinterest/url"
->
+<pg-pinterest src="#the-pinterest-post-link">
+  <h3 slot="title">The title value</h3>
+</pg-pinterest>
 ```

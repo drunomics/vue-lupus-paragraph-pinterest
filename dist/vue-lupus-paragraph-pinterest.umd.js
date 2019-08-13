@@ -140,21 +140,21 @@ var staticRenderFns = []
   props: {
     src: {
       type: String,
-      default: () => ''
+      default: function _default() {
+        return '';
+      }
     }
   },
-
-  created() {
+  created: function created() {
     if (this.src !== '') {
       // Via v-html <script> does not get executed so we need to add this element here manually.
-      const script = document.createElement('script');
+      var script = document.createElement('script');
       script.src = '//assets.pinterest.com/js/pinit.js';
       script.async = true;
       script.defer = true;
       document.head.appendChild(script);
     }
   }
-
 });
 // CONCATENATED MODULE: ./src/pg-pinterest.vue?vue&type=script&lang=js&
  /* harmony default export */ var src_pg_pinterestvue_type_script_lang_js_ = (pg_pinterestvue_type_script_lang_js_); 
